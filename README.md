@@ -1,10 +1,9 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Mijn spel: turkije 1*
+## Mijn spel: AARD*
 Gemaakt door:
-- *naam van leerling 1*
-- *naam van leerling 2*
-
+- Akhan
+- Ali
 ## Mijn planning
 
 Basis: uitleg, spelen, afgaan en punten
@@ -31,3 +30,4 @@ Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
 - manifest.json https://codelabs.developers.google.com/codelabs/your-first-pwapp/#3
 - icon http://www.iconarchive.com/show/android-lollipop-icons-by-dtafalonso/Play-Games-icon.html
 - ...
+     
