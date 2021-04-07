@@ -2,8 +2,8 @@ Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
 ## Mijn spel: AARD*
 Gemaakt door:
-- Akhan
-- Ali
+- Akhan Dalama
+- Ali reyhan
 ## Mijn planning
 
 Basis: uitleg, spelen, afgaan en punten
