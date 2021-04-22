@@ -8,7 +8,7 @@ Gemaakt door:
 
 Basis: uitleg, spelen, afgaan en punten
 - [x] maak index.html, style.css en script.js met canvas
-- [ ] teken speler
+- [x] teken speler
 - [ ] beweeg speler
 - [ ] ... *(vul zelf aan)*
 - [ ] punten op scherm zetten
@@ -31,3 +31,34 @@ Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
 - icon http://www.iconarchive.com/show/android-lollipop-icons-by-dtafalonso/Play-Games-icon.html
 - ...
      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     0

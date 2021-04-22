@@ -2,6 +2,7 @@
 /// <reference path=".gitpod/p5.global-mode.d.ts" />
 "use strict";
 
+
 /* Game opdracht
    Informatica - Emmauscollege Rotterdam
    Template voor een game in JavaScript met de p5 library
@@ -22,7 +23,7 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
-var spelerX = 100; // x-positie van speler
+var spelerX = 200; // x-positie van speler
 var spelerY = 100; // y-positie van speler
 
 var kogelX = 0;    // x-positie van kogel
@@ -37,7 +38,6 @@ var score = 0; // aantal behaalde punten
 
 
 
-
 /* ********************************************* */
 /*      functies die je gebruikt in je game      */
 /* ********************************************* */
@@ -47,7 +47,7 @@ var score = 0; // aantal behaalde punten
  * Tekent het speelveld
  */
 var tekenVeld = function () {
-  fill("255,0,0");
+  fill(255,220,86);
   rect(20, 20, width - 2 * 20, height - 2 * 20);
 };
 
@@ -80,8 +80,9 @@ var tekenKogel = function(x, y) {
  * @param {number} y y-coördinaat
  */
 var tekenSpeler = function(x, y) {
-  fill("200,200,200");
-  ellipse(x, y, 50, 50);
+  fill("white");
+  ellipse(100, 500, 50, 50);
+  ellipse(100, 575, 10, 100);
 };
 
 
@@ -148,11 +149,11 @@ var checkGameOver = function() {
  */
 function setup() {
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
-  createCanvas(1280, 720);
+  createCanvas(1280, 1820);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('blue');
-}
+  background('zwart');
+} 
 
 
 /**
@@ -187,4 +188,41 @@ function draw() {
       }
       break;
   }
+}
+
+// HowtoKeyboard
+// voorbeeld hoe je je toetsenbord in spelletjes kunt gebruiken
+
+var x = 400;
+var y = 200;
+// zie keycode.info voor meer codes van toetsen
+var KEY_LEFT = 37;
+var KEY_RIGHT = 39;
+var KEY_UP = 38;
+var KEY_DOWN = 40;
+function setup() {
+  createCanvas(800,450);
+  background('red');
+}
+
+function draw() {
+  // kijk welke toetsen zijn ingedrukt en pas x en y aan
+  if (keyIsDown(KEY_LEFT)) {
+    x = x - 2;
+  }
+  if (keyIsDown(KEY_RIGHT)) {
+    x = x + 2;
+  }  
+  if (keyIsDown(KEY_UP)) {
+    y = y - 2;
+  }
+  if (keyIsDown(KEY_DOWN)) {
+    y = y + 2;
+  }
+  // teken scherm
+  background("darkblue"); // wis achtergrond
+  fill("red");
+  ellipse (x, y, 100, 20); // teken speler
+  fill("black");
+  rect (0, 430,900, 20); // teken speler
 }
